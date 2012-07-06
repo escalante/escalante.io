@@ -1,0 +1,16 @@
+---
+layout: default
+---
+
+.post
+  %h1.title
+    %a{:href=>page.url}= page.title
+  .byline
+    .author
+      = page.author
+    .date
+      = format_date( page.date )
+  .body
+    ~ content
+  .comments
+    = page.disqus_comments

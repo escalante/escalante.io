@@ -1,0 +1,14 @@
+@import "bootstrap";
+
+.post {
+  h1.title {}
+  .byline {
+    margin-bottom: 1em;
+    font-size: 90%;
+    .author {
+      display: inline; }
+    .author {
+      font-weight: bold; } }
+  margin-bottom: 20px;
+  padding-bottom: 10px;
+}

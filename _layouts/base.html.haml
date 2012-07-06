@@ -1,0 +1,61 @@
+!!!5
+%html
+  %head
+    %meta{ :charset=>'utf-8' }
+    %title Escalante
+    %meta{ :name=>'viewport', :content=>'width=device-width, initial-scale=1.0' }
+    :css
+      body {
+        padding-top: 60px;
+      }
+    %link{ :rel=>'stylesheet', :type=>'text/css', :href=>"#{site.base_url}/stylesheets/styles.css" }
+    %script{ :type=>'text/javascript', :src=>"#{site.base_url}/javascripts/disqus-comment-count.js" }
+    /[if lt IE 9]
+      %script{ :type=>'text/javascript', :src=>'//html5shim.googlecode.com/svn/trunk/html5.js' }
+
+  %body
+    .navbar.navbar-fixed-top
+      .navbar-inner
+        .container
+          %a.brand{ :href=>"#{site.base_url}" } Escalante
+          %ul.nav
+            %li
+              %a{ :href=>"#{site.base_url}/news/" } News
+            %li
+              %a{ :href=>"#{site.base_url}/install/" } Install
+            %li
+              %a{ :href=>"#{site.base_url}/docs/" } Documentation
+    .container
+      .row
+        .span4
+          .hero-unit
+            %h2
+              Escalante
+            -#%a{:href=>'http://travis-ci.org/awestruct/awestruct'}
+            -#  %img{ :src => 'https://secure.travis-ci.org/awestruct/awestruct.png' }
+            %h3
+              Latest version is #{site.version}
+            %p
+              An application server for Scala apps.
+            %p
+              %a.btn.btn-primary.btn-large{:href=>"#{site.base_url}/install/"} Install Escalante
+          #sidebar
+            %ul.nav.nav-tabs.nav-stacked
+              %li
+                %a{:href=>"#{site.base_url}/source/"} Source Code
+              %li
+                %a{:href=>'mailto:talk-subscribe@awestruct.org?subject=subscribe'} Mailing List
+              %li
+                %a{:href=>'http://talk-archive.awestruct.org/'} List Archives
+              %li
+                %a{:href=>'http://twitter.com/escalanteio'} Twitter
+        .span8
+          ~ content
+
+      .row
+        %hr
+        %footer
+          %p &copy; Organization #{Date.today.year}
+    -# Uncomment script tags (remove leading -#) when you're ready to use behaviors
+    -# %script{ :type=>'text/javascript', :src=>'//cdnjs.cloudflare.com/ajax/libs/jquery/1.7.1/jquery.min.js' }
+    -# %script{ :type=>'text/javascript', :src=>"#{site.base_url}/javascripts/bootstrap-collapse.js" }
