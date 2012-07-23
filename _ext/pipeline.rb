@@ -1,5 +1,6 @@
 require 'downloads'
 require 'format_helper'
+require 'toc'
 
 Awestruct::Extensions::Pipeline.new do
 
@@ -12,7 +13,7 @@ Awestruct::Extensions::Pipeline.new do
   ## Convert root files to <dir_name>/index.html
   #extension Awestruct::Extensions::Indexifier.new
 
-  extension Downloads.new()
+  # extension Downloads.new()
 
   extension Awestruct::Extensions::Posts.new( '/news' )
   extension Awestruct::Extensions::Atomizer.new( :posts, '/news.atom' )
@@ -23,6 +24,8 @@ Awestruct::Extensions::Pipeline.new do
                                                   :per_page=>3 )
 
   helper FormatHelper
+
+  extension TOC.new(:levels => 3)
 
 end
 

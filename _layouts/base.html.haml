@@ -42,11 +42,15 @@
           #sidebar
             %ul.nav.nav-tabs.nav-stacked
               %li
-                %a{:href=>"#{site.base_url}/source/"} Source Code
+                %a{:href=>"#{site.base_url}/community/irc"} IRC
               %li
-                %a{:href=>'mailto:talk-subscribe@awestruct.org?subject=subscribe'} Mailing List
+                %a{:href=>"#{site.base_url}/community/lists"} Mailing Lists
               %li
-                %a{:href=>'http://talk-archive.awestruct.org/'} List Archives
+                %a{:href=>"#{site.base_url}/community/issue-tracker"} Issue Tracker
+              %li
+                %a{:href=>"#{site.base_url}/development/source"} Source Control
+              %li
+                %a{:href=>"#{site.base_url}/development/contributing"} Contribution Guide
               %li
                 %a{:href=>'http://twitter.com/escalanteio'} Twitter
         .span8
@@ -55,7 +59,19 @@
       .row
         %hr
         %footer
-          %p &copy; Organization #{Date.today.year}
+          %p
+            The #{site.title} project is a member of the
+            <a href="http://jboss.org/">JBoss Community</a> and produced by
+            the <a href="http://projectodd.org/">Project:odd</a> team.
+
+          %p
+            It is a community-driven open-source project, and is licensed under the
+            <a href="/license-epl.txt">EPL 1.0</a>.
+
+          %p
+            Copyright 2012 - #{Date.today.year}
+            <a href="http://redhat.com/">Red Hat, Inc.</a>
+
     -# Uncomment script tags (remove leading -#) when you're ready to use behaviors
-    -# %script{ :type=>'text/javascript', :src=>'//cdnjs.cloudflare.com/ajax/libs/jquery/1.7.1/jquery.min.js' }
-    -# %script{ :type=>'text/javascript', :src=>"#{site.base_url}/javascripts/bootstrap-collapse.js" }
+    -#%script{ :type=>'text/javascript', :src=>'//cdnjs.cloudflare.com/ajax/libs/jquery/1.7.1/jquery.min.js' }
+    -#%script{ :type=>'text/javascript', :src=>"#{site.base_url}/javascripts/bootstrap-collapse.js" }
