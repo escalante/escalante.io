@@ -34,10 +34,8 @@ Subscribe
 ---------
 To subscribe to the list(s), send an email (no subject or body is required) to:
 
-TODO: Add mailto links...
-
-* User List: `escalante-user-subscribe@escalante.io`
-* Developer List: `escalante-dev-subscribe@escalante.io`
+* User List: [`escalante-user-subscribe@escalante.io`](mailto:escalante-user-subscribe@escalante.io)
+* Developer List: [`escalante-dev-subscribe@escalante.io`](mailto:escalante-dev-subscribe@escalante.io)
 
 You will receive a confirmation email from the system. You must reply to this
 confirmation email in order to complete your subscription.
@@ -47,8 +45,8 @@ Unsubscribe
 To unsubscribe from the either of the list(s), send an email (no subject or
 body is required) to:
 
-* User List: `escalante-user-unsubscribe@escalante.io`
-* Developer List: `escalante-dev-unsubscribe@escalante.io`
+* User List: [`escalante-user-unsubscribe@escalante.io`](escalante-user-unsubscribe@escalante.io)
+* Developer List: [`escalante-dev-unsubscribe@escalante.io`](escalante-dev-unsubscribe@escalante.io)
 
 You will receive a confirmation email from the system. You must reply to this
 confirmation email in order to complete the unsubscription.
