@@ -5,7 +5,7 @@ toc : true
 ---
 
 <div class="page-header">
-<h1>Contribution Guide</h1>
+<h1>Development</h1>
 </div>
 
 #{page.table_of_contents}
@@ -25,8 +25,13 @@ to install Git, you can download source bundles.
 
 ## Source Control
 
-Information on the location the Escalante code can be found
-[here](/development/source).
+Source is kept on GitHub:
+
+* <http://github.com/escalant/escalante/>
+
+The source for the `escalante.io` site is also available on GitHub:
+
+* <http://github.com/escalante/escalante.io/>
 
 ## Scala
 

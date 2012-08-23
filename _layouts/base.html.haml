@@ -22,9 +22,13 @@
             %li
               %a{ :href=>"#{site.base_url}/news/" } News
             %li
-              %a{ :href=>"#{site.base_url}/install/" } Install
-            %li
               %a{ :href=>"#{site.base_url}/docs/" } Documentation
+            %li
+              %a{ :href=>"#{site.base_url}/quickstarts/" } Quickstarts
+            %li
+              %a{ :href=>"#{site.base_url}/community/" } Community
+            %li
+              %a{ :href=>"#{site.base_url}/development/" } Development
     .container
       .row
         .span4
@@ -38,19 +42,17 @@
             %p
               An application server for Scala apps.
             %p
-              %a.btn.btn-primary.btn-large{:href=>"#{site.base_url}/install/"} Install Escalante
+              %a.btn.btn-primary.btn-large{:href=>"#{site.base_url}/docs/#escalante_installation"} Install Escalante
           #sidebar
             %ul.nav.nav-tabs.nav-stacked
               %li
-                %a{:href=>"#{site.base_url}/community/irc"} IRC
+                %a{:href=>"#{site.base_url}/community/#irc"} IRC
               %li
-                %a{:href=>"#{site.base_url}/community/lists"} Mailing Lists
+                %a{:href=>"#{site.base_url}/community/#user_forum"} User Forum
               %li
-                %a{:href=>"#{site.base_url}/community/issue-tracker"} Issue Tracker
+                %a{:href=>"#{site.base_url}/community/#issue_tracker"} Issue Tracker
               %li
-                %a{:href=>"#{site.base_url}/development/source"} Source Control
-              %li
-                %a{:href=>"#{site.base_url}/development/contribute"} Contribution Guide
+                %a{:href=>"#{site.base_url}/development/#source_control"} Source Control
               %li
                 %a{:href=>'http://twitter.com/escalanteio'} Twitter
         .span8

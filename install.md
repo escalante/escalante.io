@@ -1,2 +1,0 @@
-TODO:
-Installation guide...etc
