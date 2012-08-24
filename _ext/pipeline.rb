@@ -23,6 +23,7 @@ Awestruct::Extensions::Pipeline.new do
   extension Awestruct::Extensions::Paginator.new( :posts, '/news/index',
                                                   :per_page=>3 )
 
+  helper Awestruct::Extensions::GoogleAnalytics
   helper FormatHelper
 
   extension TOC.new(:levels => 3)

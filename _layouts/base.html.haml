@@ -9,10 +9,12 @@
         padding-top: 60px;
       }
     %link{ :rel=>'stylesheet', :type=>'text/css', :href=>"#{site.base_url}/stylesheets/styles.css" }
+
+    = google_analytics_async if site.profile.add_google_tracker
+
     %script{ :type=>'text/javascript', :src=>"#{site.base_url}/javascripts/disqus-comment-count.js" }
     /[if lt IE 9]
       %script{ :type=>'text/javascript', :src=>'//html5shim.googlecode.com/svn/trunk/html5.js' }
-
   %body
     .navbar.navbar-fixed-top
       .navbar-inner

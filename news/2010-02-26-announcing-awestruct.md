@@ -4,9 +4,10 @@ author: Galder Zamarreño
 layout: news
 ---
 
-While attempting to rebuild the site at [TorqueBox.org](http://torquebox.org/),
-I became frustrated with Jekyll and its forks.  Plus I had a yak that needed
-shaving.
+Blah blah blah blah blah blah [Escalante](http://escalante.io/), blah blah
+blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah
+blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah
+blah blah blah blah blah blah blah blah
 
-So, I'm happy to announce *Awestruct*.
+So, I'm happy to announce *Escalante*.
 
