@@ -95,3 +95,8 @@ body is required) to:
 
 You will receive a confirmation email from the system. You must reply to this
 confirmation email in order to complete the unsubscription.
+
+### Archives
+
+`escalante-dev` is archived in both [MarkMail](http://markmail.org/search/?q=io.escalante.escalante-dev+list%3Aio.escalante.escalante-dev+order%3Adate-backward)
+ and [Nabble](http://escalante-developer-list.1065539.n5.nabble.com/).
