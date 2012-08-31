@@ -27,7 +27,7 @@ to install Git, you can download source bundles.
 
 Source is kept on GitHub:
 
-* <http://github.com/escalant/escalante/>
+* <http://github.com/escalante/escalante/>
 
 The source for the `escalante.io` site is also available on GitHub:
 
