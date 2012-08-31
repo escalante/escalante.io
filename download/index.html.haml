@@ -1,0 +1,65 @@
+---
+layout: default
+title: Releases
+---
+
+#intro
+  :markdown
+    Official, versioned Escalante releases are listed here.
+
+%p
+  %table.table.table-striped.table-bordered
+    %tr
+      %th Version
+      %th Release Date
+      %th Binary Distribution
+      %th Documentation
+      %th Changelog
+      %th Git Tree
+    %tr
+      -# TODO: Automate this!!
+      %td.version
+        %a{:href => "#{site.base_url}/news/2012/08/31/announcing-0-1-0/"} 0.1.0
+      %td.date
+        31 August 2012
+      %td.dist
+        %a{:href => "https://repository.jboss.org/nexus/content/groups/public/io/escalante/escalante-dist/0.1.0/escalante-dist-0.1.0.zip"} ZIP archive (129mb)
+      %td
+        %a{ :href=>"#{site.base_url}/docs/" } Manual
+      %td
+        %ul
+          %li
+            %a{:href=> "https://github.com/escalante/escalante/commits/0.1.0"} Git Log
+      %td
+        %a{:href=> "https://github.com/escalante/escalante/tree/0.1.0"} Browse
+
+
+
+
+    -#- site.releases.each do |release|
+    -#  - announcement = announcement_for_version(release.version)
+      -#= announcement.version
+
+      -#- site.posts.each do |post|
+      -#  = post.version
+      -#  = post.url
+
+      -#%tr
+      -#  %td.version
+      -#    %a{:href => announcement.url}= release.version
+-#        %td.date
+-#          = announcement.date.strftime( '%d %B %Y' )
+-#        %td.dist
+-#          %a{:href => release.urls.remote_dist_zip, :rel => latest_release?(release) ? 'download' : 'nofollow'}
+-#            == ZIP archive (#{release.dist_size}mb)
+-#        %td
+-#          %a{ :href=>"#{site.base_url}/docs/" } Manual
+-#        %td
+-#          %ul
+-#            %li
+-#              %a{:href=>release.urls.jira} JIRA Issues
+-#            %li
+-#              %a{:href=>release.urls.github.log} Git Log
+-#        %td
+-#          %a{:href=>release.urls.github.tree} Browse
+-#
