@@ -26,7 +26,7 @@ as anyone else by participating on IRC.  IRC is our virtual office
 [`irc.freenode.net #escalante`](irc://irc.freenode.net/escalante)
 
 If you don't have an IRC client, you can use the
-[web chat](http://webchat.freenode.net/?channels=immutant) interface.
+[web chat](http://webchat.freenode.net/?channels=escalante) interface.
 
 ## User Forum
 
