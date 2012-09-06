@@ -59,6 +59,10 @@
                 %a{:href=>"#{site.base_url}/development/#source_control"} Source Control
               %li
                 %a{:href=>'http://twitter.com/escalanteio'} Twitter
+            - if page.display_tag_cloud
+              %hr
+              .tags
+                = site.posts_tag_cloud
         .span8
           ~ content
 

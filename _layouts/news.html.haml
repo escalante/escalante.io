@@ -10,6 +10,11 @@ layout: default
       = page.author
     .date
       = format_date( page.date )
+    - if page.tags
+      .tags
+        - page.tags.each do |tag|
+          %a{:href=>tag.primary_page.url}<
+            = tag
   .body
     ~ content
   .comments
