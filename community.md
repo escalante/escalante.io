@@ -98,5 +98,5 @@ confirmation email in order to complete the unsubscription.
 
 ### Archives
 
-`escalante-dev` is archived in both [MarkMail](http://markmail.org/search/?q=io.escalante.escalante-dev+list%3Aio.escalante.escalante-dev+order%3Adate-backward)
+`escalante-dev` is archived in both [MarkMail](http://escalante.markmail.org/search/?q=)
  and [Nabble](http://escalante-developer-list.1065539.n5.nabble.com/).
