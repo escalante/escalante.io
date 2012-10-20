@@ -135,7 +135,7 @@ build Escalante, including the project structure, please check
 [the build instructions](https://github.com/escalante/escalante/blob/master/README.md)
 in the Escalante source code.
 
-## IDE Setup
+## IDE Setup For Contributors
 
 The majority of Escalante's source currently requires Scala 2.8, but there is
 one integration test project that requires Scala 2.9 in order to test
