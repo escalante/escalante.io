@@ -44,16 +44,17 @@ following steps are required:
 
 1. Install JBoss Developer Studio following
 [these instructions](https://openshift.redhat.com/community/page/install-jboss-developer-studio).
-2. Install `m2eclipse-scala` via this
-[update site](http://alchim31.free.fr/m2e-scala/update-site).
-3. Next, you need to install [Scala IDE](http://scala-ide.org/docs/user/gettingstarted.html),
+2. Next, you need to install [Scala IDE](http://scala-ide.org/docs/user/gettingstarted.html),
 but the version to install depends on the Scala version you'll be using:
 
-    For Scala 2.9.x applications, install Scala IDE via the
+   a) For Scala 2.9.x applications, install Scala IDE via the
     [update site for Scala 2.9.x](http://download.scala-ide.org/releases-29/stable/site)
 
-    For Scala 2.8.x applications, install Scala IDE via the
+   b) For Scala 2.8.x applications, install Scala IDE via the
     [update site for Scala 2.8.x](http://download.scala-ide.org/releases-28/stable/site)
+
+3. Install `m2eclipse-scala` via this
+[update site](http://alchim31.free.fr/m2e-scala/update-site).
 
 <div class="alert">
   <button type="button" class="close" data-dismiss="alert">×</button>
