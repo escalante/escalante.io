@@ -15,10 +15,6 @@ toc: true
 Escalante is an application server for [Scala](http://scalan-lang.org),
 based on the popular [JBoss Application Server 7](http://www.jboss.org/as7).
 
-### Why should I develop in Scala?
-
-TODO
-
 ### Open Source
 
 Escalante is a project of the JBoss Community, and is completely
@@ -72,71 +68,32 @@ Running Escalante essentially amounts to running JBoss:
 
 ## Escalante for Lift Web Applications
 
-### Why develop web applications using Lift?
+If you've never head of Lift, or have never used it, you might wanna check
+the [FAQ section](/faq) where you can find answers to questions such as:
 
-If you've never never heard of Lift or have never used it, you might be
-wondering:
+> Q. [What is Lift ?](/faq/#what_is_lift)
 
-> What is Lift?
+> Q. [Why develop web applications using
+Lift ?](/faq/#why_develop_web_applications_using_lift)
 
-[Lift](http://liftweb.net/) is one of the most mature web application
-development frameworks written for the Scala programming language. It has been
-designed to build sophisticated, rich and vibrant web applications using
-Scala, a hybrid programming language incorporating both functional and object
-oriented capabilities.
+> Q. [Why deploy Lift applications on
+Escalante ?](/faq/#why_deploy_lift_applications_on_escalante)
 
-> Why develop web applications using Lift?
-
-Lift has been particularly developed for those web developers who want to
-build highly interactive, real-time web applications that push data to the
-browser when needed, without users having to send requests to the server. Lift
-uses technologies such as
-<a href="http://en.wikipedia.org/wiki/Comet_(programming)">Comet</a> or
-<a href="http://en.wikipedia.org/wiki/Ajax_(programming)">Ajax</a>, to be
-able to build this type of applications.
-
-**Security** has been a major design goal for Lift creators, and this is
-reflected in the fact that Lift web applications are protected against [SQL
-injection](http://en.wikipedia.org/wiki/SQL_injection), [CSRF (cross-site
-request forgery)](http://en.wikipedia.org/wiki/Cross-site_request_forgery),
-[XSS (cross-site scripting)](http://en.wikipedia.org/wiki/Cross-site_scripting)
-, and many other attacks without web application developers needing to do any
-extra configuration or work.
-
-Since Lift is built on top of Scala, it enables development of web
-applications that are very **concise**, and Lift itself comes with a lot of
-utilities that help web developers build applications with less code.
-
-Based on an architecture designed around well-formed HTML5 or XHTML
-template views and snippets that get injected into the templates, it offers
-a **clear separation** between the work done by web UI designers
-and web developers. This guarantees that designers won't introduce problems as
-a result of modifying web framework specific code within template.
-
-[FourSquare](https://foursquare.com/) or [Montreux Jazz
-Festival](http://metamedia.epfl.ch/page-80142-en.html) are examples of
-companies that have developed Lift based web applications. These applications
-are subject to enormous traffic spikes, and are living proof that Lift
-applications are scalable and resilient.
-
-To find out more about developing Lift applications, [Lift In
-Action book](http://www.manning.com/perrett/) offers a comprehensive,
-detailed guide to writing Lift web applications following best practices.
-
-> Why deploy Lift applications on Escalante?
-
-Escalante allows you to deploy [Lift web applications](http://liftweb.net/)
-in a way that optimises the size of the deployment and the memory consumption
-at runtime, both of which are of paramount importance. Escalante does however
-still allow you to deploy standard Lift applications. Let's look at the
-differences between these two deployment modes:
+Now that you're familiar with Lift, let's see what Escalante provides for
+Lift developers. Escalante offers the possibility of deploying Lift
+applications in two different ways. Let's look at the differences between
+these two deployment modes:
 
 ### Optimising Lift applications for Escalante
 
-Lift applications targeted for deployment in Escalante do not require any Lift
-dependencies to be shipped within the application, and that includes the Scala
-language libraries too. This vastly reduces the size of your application
-deployment archive.
+Deploying Lift applications in other servlet engines, or application servers,
+normally require the application to ship both the Lift and Scala libraries
+within them, bloating the deployment archive.
+
+Lift applications targeted for deployment in Escalante can be configured in
+such way that they do not require any Lift dependencies to be shipped within
+the application, and that includes the Scala language libraries too.
+This vastly reduces the size of your application deployment archive.
 
 To give you an idea, the most basic of the Lift examples, the war file for the
 'Hello World' example, takes in the region of 30 MB. Without all the jar

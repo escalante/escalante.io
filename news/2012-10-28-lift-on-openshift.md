@@ -14,8 +14,7 @@ on top of Escalante.
 <div class="alert alert-success">
 <strong>What is Lift?</strong> If you've never heard of Lift, or you don't know
 what Lift-based web applications can offer you, please check
-<a href="/docs/#why_develop_web_applications_using_lift">Lift's introduction
-in Escalante's documentation</a>.
+<a href="/faq/#lift">Lift's FAQ section</a>.
 </div>
 
 So, I'm very proud to announce that you can now run Lift applications on [Red
