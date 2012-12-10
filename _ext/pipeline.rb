@@ -31,6 +31,7 @@ Awestruct::Extensions::Pipeline.new do
                                                 :layout=>'one-column')
 
   helper Awestruct::Extensions::GoogleAnalytics
+  helper Awestruct::Extensions::Partial
   helper FormatHelper
 
   extension TOC.new(:levels => 3)
