@@ -3,7 +3,7 @@ title: Scaladin quickstart for Escalante
 author: Galder Zamarreño
 layout: news
 display_tag_cloud: true
-tags: [ scaladin, quickstart ]
+tags: [ scaladin, vaadin, quickstart ]
 ---
 
 The first external Escalante contribution is in, and it comes from
