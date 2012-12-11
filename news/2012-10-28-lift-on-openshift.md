@@ -37,7 +37,7 @@ set up SSH keys, command line tools...etc.
 2. Once you've signed up, log in, go to [My
 Applications](https://openshift.redhat.com/app/console) and create a brand
 new <a class="btn btn-info"
-href="https://openshift.redhat.com/app/console/application_types/jbosseap-6.0">
+href="https://openshift.redhat.com/app/console/application_types/cart!jbosseap-6.0">
 JBoss Enterprise Application Platform 6.0</a> application.
 
 3. Give the application a name, for example `escalante`, and click on
