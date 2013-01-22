@@ -52,11 +52,12 @@ For Apple OSX systems, Apple provides a JDK version 6.
 
 ### Download binary distribution
 
-You can obtain the latest version of Escalante from the Escalante repository...
+You can obtain the latest version of Escalante from the [downloads
+section](/download).
 
 ### Unzip it somewhere handy
 
-We'll install TorqueBox under your user's $HOME directory.
+We'll install Escalante under your user's $HOME directory.
 
     $ unzip -q escalante...
 
@@ -101,16 +102,27 @@ dependencies, the war file takes a mere 8 KB.
 
 So, the question is, how does Escalante know, at deploy time, which
 dependencies your Lift application needs? Escalante figures out which
-dependencies your applications needs reading a `WEB-INF/lift.xml` file within
-your deployment archive. Here's an example:
+dependencies your applications needs reading a `META-INF/escalante.yml`
+file within your deployment archive. This file should be formatted
+following the [YAML](http://www.yaml.org/) markup language which offers a
+human-readable way of defining metadata for your application.
 
-    <lift-app version="2.4" scala-version="2.9.2" />
+Here's an example of `META-INF/escalante.yml` configuring all available
+properties:
+
+    scala:
+      version: 2.9.2
+    lift:
+      version: 2.4
+      modules:
+        - mapper
+        - jpa
 
 This example descriptor is indicating to Escalante that the Lift version that
 this application needs in 2.4, and that the Scala version required is 2.9.2.
-Both `version` and `scala-version` attributes are optional in which case,
-default values are assumed. The default values currently used by Escalante are
-shown in the example.
+Both `version` attributes are optional in which case, default values are
+assumed. The default values currently used by Escalante are shown in the
+example.
 
 Once the dependency versions are known, Escalante uses a Maven dependency
 resolver library to download, if not already present locally, and build the
@@ -121,14 +133,25 @@ explained above, some of the dependencies can actually be shared between
 different Lift applications, which results in a further reduction on memory
 usage.
 
-In the current Escalante release, the Lift and Scala versions supported for
-this deployment more are:
+Lift's `modules` attribute defines a list of extra modules that the Lift
+application requires. These modules essentially translate to Maven Lift
+artifacts with these coordinates:
 
-* Lift versions: `2.4`
+    <groupId>net.liftweb</groupId>
+    <artifactId>lift-$<MODULE_NAME>_$<SCALA_VERSION></artifactId>
+    <version>$<LIFT_VERSION><version>
 
-* Scala: `2.8.0`, `2.8.1`, `2.8.2`, `2.9.0`, `2.9.1`, `2.9.2`
+By default, if no `modules` is given, Escalante brings in the `webkit` module
+which is the base of any Lift application.
 
-Future releases might support more Lift and/or Scala versions.
+There's no limitation to the Scala or Lift versions supported. The only
+requirement is that they can be resolved using Maven. Lift artifacts are
+resolved using the coordinates mentioned above. For Scala dependencies,
+these are resolved from these coordinates:
+
+    <groupId>org.scala-lang</groupId>
+    <artifactId>scala-library</artifactId>
+    <version>$<SCALA_VERSION><version>
 
 As a Lift application developer, you will be familiar with the requirement that
 Lift applications require a `WEB-INF/web.xml` to be included within them in
@@ -138,6 +161,26 @@ In the absence of a `WEB-INF/web.xml`, Escalante adds one to the deployment
 archive. If the user application does contain a `WEB-INF/web.xml`, it uses the
 one already shipped, so this means that the if the user provides a web
 descriptor, it must contain the Lift filter definition.
+
+### Maven support
+
+Lift applications can be created and deployed into Escalante using Maven.
+By far the best way to find out how to configuration applications to deploy to
+Escalante using Maven is to inspect the [Escalante Quickstarts](/quickstarts)
+and use them as starting point.
+
+### SBT support
+
+Lift applications can now be created and deployed into Escalante using SBT.
+Thanks to the [Escalante SBT plugin](http://github.com/escalante/sbt-escalante),
+`META-INF/escalante.yml` can be generated (if not already present in the
+source tree) using the build's metadata information, and Lift applications
+can be deployed to an embedded Escalante instance which does not require a
+separate process.
+
+By far the best way to find out how to configuration applications to deploy to
+Escalante using SBT is to inspect the [Escalante Quickstarts](/quickstarts)
+and use them as starting point.
 
 ### Standard Lift application support
 

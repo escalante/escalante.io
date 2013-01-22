@@ -19,25 +19,33 @@ deploy them (SBT files will be provided very shortly):
 
 ### Escalante Lift Hello World
 
-This [quickstart](https://github.com/escalante/escalante-quickstart/tree/master/helloworld-lift)
+This [quickstart](https://github.com/escalante/escalante-quickstart/tree/0.2.0/helloworld-lift)
 shows how to deploy a basic, optimised Lift application in Escalante.
 
 ### Escalante Lift Persistence
 
-This [examples](https://github.com/escalante/escalante-quickstart/tree/master/persistence-lift)
+This [example](https://github.com/escalante/escalante-quickstart/tree/0.2.0/persistence-lift)
 shows how to deploy a more complex application, based on Lift's Mapper ORM
 extensions, in an optimised way to Escalante. This example shows how to
 interact with the app servers's default datasource.
 
+### Escalante Lift JPA Library Persistence
+
+This [example](https://github.com/escalante/escalante-quickstart/tree/0.2.0/library-lift-jpa)
+shows how to deploy and run an application that tracks books and authors in a
+library, using Lift's JPA integration. This application interacts with
+Escalante's JPA infrastructure, based on Hibernate, which is used to persist
+these books and author instances.
+
 ### Standard Lift Hello World
 
-This [quickstart](https://github.com/escalante/escalante-quickstart/tree/master/standard-helloworld-lift)
+This [quickstart](https://github.com/escalante/escalante-quickstart/tree/0.2.0/standard-helloworld-lift)
 demonstrates that you can deploy standard, non-optimised, Lift applications
 to Escalante.
 
 ### Scaladin Hello World
 
-This [example](https://github.com/escalante/escalante-quickstart/tree/master/helloworld-scaladin)
+This [example](https://github.com/escalante/escalante-quickstart/tree/0.2.0/helloworld-scaladin)
 demonstrates a simple, Hello World style, Scaladin web application deployment
 on top of Escalante. Scaladin is a wrapper that makes it easier to use
 <a href="http://vaadin.com">Vaadin Framework</a> with Scala programming

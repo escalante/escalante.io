@@ -23,9 +23,16 @@ and more efficient than existing solutions.
 
 ### What is Scala ?
 
-TODO
+[Scala](http://www.scala-lang.org/) is a programming language for the Java
+Virtual Machine designed to write programs in a concise, elegant and type-safe
+way. It combines both object-oriented and functional programming models,
+enabling developers to be more productive.
 
 ### Why should I develop in Scala?
+
+TODO
+
+### OK, I want to learn Scala, where should I start?
 
 TODO
 
