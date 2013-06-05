@@ -92,6 +92,22 @@ at runtime, both of which are of paramount importance. Escalante does however
 still allow you to deploy standard Lift applications. For more info, check
 the [documentation](/documentation).
 
+## Play Framework
+
+### What is Play Framework?
+
+[Play Framework](http://www.playframework.com/) is a popular, lightweight,
+stateless Scala web framework that's build on Akka and enables highly-scalable
+applications.
+
+### What version of Play Framework can be deployed on Escalante?
+
+Only Play Framework versions 2.1 or above can be deployed.
+
+### Are Java Play web applications supported on Escalante?
+
+No, Escalante only focuses on deploying Scala Play applications.
+
 ## Vaadin
 
 ### What is Vaadin ?

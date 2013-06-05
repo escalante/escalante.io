@@ -17,35 +17,58 @@ for Escalante, several quickstarts have been developed to help the users.
 Currently these quickstarts come with a Maven pom file used to build and
 deploy them (SBT files will be provided very shortly):
 
-### Escalante Lift Hello World
+### Lift Quickstarts
 
-This [quickstart](https://github.com/escalante/escalante-quickstart/tree/0.2.0/helloworld-lift)
-shows how to deploy a basic, optimised Lift application in Escalante.
+#### Escalante Lift Hello World
 
-### Escalante Lift Persistence
+This [quickstart](https://github.com/escalante/escalante-quickstart/tree/0.3.0/helloworld-lift)
+shows how to deploy a basic, optimised Lift application which shows a
+"Hello World" message on top of Escalante.
 
-This [example](https://github.com/escalante/escalante-quickstart/tree/0.2.0/persistence-lift)
+#### Escalante Lift Persistence
+
+This [example](https://github.com/escalante/escalante-quickstart/tree/0.3.0/persistence-lift)
 shows how to deploy a more complex application, based on Lift's Mapper ORM
 extensions, in an optimised way to Escalante. This example shows how to
 interact with the app servers's default datasource.
 
-### Escalante Lift JPA Library Persistence
+#### Escalante Lift JPA Library Persistence
 
-This [example](https://github.com/escalante/escalante-quickstart/tree/0.2.0/library-lift-jpa)
+This [example](https://github.com/escalante/escalante-quickstart/tree/0.3.0/library-lift-jpa)
 shows how to deploy and run an application that tracks books and authors in a
 library, using Lift's JPA integration. This application interacts with
 Escalante's JPA infrastructure, based on Hibernate, which is used to persist
 these books and author instances.
 
-### Standard Lift Hello World
+#### Standard Lift Hello World
 
-This [quickstart](https://github.com/escalante/escalante-quickstart/tree/0.2.0/standard-helloworld-lift)
+This [quickstart](https://github.com/escalante/escalante-quickstart/tree/0.3.0/standard-helloworld-lift)
 demonstrates that you can deploy standard, non-optimised, Lift applications
 to Escalante.
 
+### Play Quickstarts
+
+#### Escalante Play Hello World
+
+This [quickstart](https://github.com/escalante/escalante-quickstart/tree/0.3.0/helloworld-play)
+shows how to deploy a basic, Play 2.x application which shows a "Hello World"
+message on top of Escalante. This quickstart uses [SBT](http://www.scala-sbt.org/),
+along with the Play and Escalante SBT plugins, to build and deploy the application.
+
+#### Escalante Play Persistence to Database
+
+This [quickstart](https://github.com/escalante/escalante-quickstart/tree/0.3.0/persistdb-play)
+shows how to deploy a Play 2.x application on top of Escalante which uses a
+web interface to manage the lifecycle of created tasks, which are stored in a
+database defined in the `application.conf` file. This quickstart uses
+[SBT](http://www.scala-sbt.org/), along with the Play and Escalante SBT plugins,
+to build and deploy the application.
+
+### Other Quickstarts
+
 ### Scaladin Hello World
 
-This [example](https://github.com/escalante/escalante-quickstart/tree/0.2.0/helloworld-scaladin)
+This [example](https://github.com/escalante/escalante-quickstart/tree/0.3.0/helloworld-scaladin)
 demonstrates a simple, Hello World style, Scaladin web application deployment
 on top of Escalante. Scaladin is a wrapper that makes it easier to use
 <a href="http://vaadin.com">Vaadin Framework</a> with Scala programming

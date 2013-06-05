@@ -67,36 +67,20 @@ everyone wants can only help us in our planning.
 
 * [Create a new feature request](https://issues.jboss.org/secure/CreateIssue.jspa?issuetype=2&pid=12312520)
 
-## Developer Mailing List
+## Developer Google Group
 
-The developer list is where the developers discuss internal designs, choices
-and complexity. If you are interested in the inner workings and how they are
-built, the developer list is an excellent resource.
+The [Escalante developer Google Group](https://groups.google.com/forum/#!topic/escalante-dev)
+is where the developers discuss internal designs, choices and complexity.
+If you are interested in the inner workings and how they are built, the
+developer list is an excellent resource.
 
 Since the developers also participate on the user list, there is no need to
 initiate bug reports on the developer list. The developers will escalate true
 defects to the developer list to determine the proper course of action.
 
-### Subscribe
-
-To subscribe to the list(s), send an email (no subject or body is required) to:
-
-[`escalante-dev-subscribe@escalante.io`](mailto:escalante-dev-subscribe@escalante.io)
-
-You will receive a confirmation email from the system. You must reply to this
-confirmation email in order to complete your subscription.
-
-### Unsubscribe
-
-To unsubscribe from the either of the list(s), send an email (no subject or
-body is required) to:
-
-[`escalante-dev-unsubscribe@escalante.io`](escalante-dev-unsubscribe@escalante.io)
-
-You will receive a confirmation email from the system. You must reply to this
-confirmation email in order to complete the unsubscription.
-
 ### Archives
 
-`escalante-dev` is archived in both [MarkMail](http://escalante.markmail.org/search/?q=)
+Escalante developer discussions were previously done in a mailing list called
+`escalante-dev`. These discussions are archived in both
+[MarkMail](http://escalante.markmail.org/search/?q=)
  and [Nabble](http://escalante-developer-list.1065539.n5.nabble.com/).

@@ -111,15 +111,15 @@ Here's an example of `META-INF/escalante.yml` configuring all available
 properties:
 
     scala:
-      version: 2.9.2
+      version: 2.10.1
     lift:
-      version: 2.4
+      version: 2.5-RC4
       modules:
         - mapper
         - jpa
 
 This example descriptor is indicating to Escalante that the Lift version that
-this application needs in 2.4, and that the Scala version required is 2.9.2.
+this application needs in 2.5-RC4, and that the Scala version required is 2.10.1.
 Both `version` attributes are optional in which case, default values are
 assumed. The default values currently used by Escalante are shown in the
 example.
@@ -204,3 +204,65 @@ datasource. To do so, Lift's bootable class, normally located in
 connection identifier to point to the JNDI name of the example datasource:
 
     DefaultConnectionIdentifier.jndiName = "java:jboss/datasources/ExampleDS"
+
+## Escalante for Play Framework 2 Applications
+
+[Play Framework](http://www.playframework.com/) is a popular, lightweight,
+stateless Scala web framework that's build on Akka and enables highly-scalable
+applications. Check [FAQ section](/faq) for more in depth details about
+Play Framework.
+
+Starting in Escalante `0.3.0`, Play Framework 2.1 Scala web applications can
+be deployed on top of Escalante natively. The integration is currently limited
+to deployment of the applications and resolution of Play library dependencies,
+but in future versions further integrations with the services provided by
+Escalante will be developed.
+
+### Getting started
+
+By far the best way to get started deploying Play 2.x applications on top of
+Escalante is to have a look at the [Escalante Play Quickstarts](/quickstarts)
+and use them as starting point.
+
+The primary way to deploy Play 2.x applications on top of Escalante is to use
+[SBT](http://www.scala-sbt.org/), along with the Play and Escalante SBT plugins,
+in order to build, deploy and run these type of applications. With this in mind,
+the following system properties should be passed to the `sbt` command in order
+to configure runtime configuration options:
+
+* `-Dhttp.address`: configure HTTP address or host name for the application.
+Default value is `0.0.0.0`.
+* `-Dhttp.port`: configure HTTP port for the application. Default value is `9000`.
+* `-Dhttps.port`: optional SSL port configuration.
+
+### Logging from SBT
+
+Logging, when running Escalante on top of SBT, works slightly differently to
+standalone Play 2.x applications. Instead of defining logging information in
+either `application.conf`, or providing `application-logger.xml`, in order to
+fine tune logging settings, you need to pass a `-Djava.util.logging.config.file=`
+property which points to a logging settings file. A typical JDK logging
+configuration file would contain:
+
+    handlers=java.util.logging.FileHandler,java.util.logging.ConsoleHandler
+    .level=INFO
+
+    io.escalante.level=FINEST
+    org.level=INFO
+    com.level=INFO
+    play.level=FINEST
+
+    java.util.logging.FileHandler.pattern = %t/escalante-%u.log
+    java.util.logging.FileHandler.count = 1
+    java.util.logging.FileHandler.level = FINEST
+    java.util.logging.FileHandler.formatter = java.util.logging.SimpleFormatter
+
+    java.util.logging.ConsoleHandler.level = FINEST
+    java.util.logging.ConsoleHandler.formatter = java.util.logging.SimpleFormatter
+
+### Reloadable Application Support
+
+Currently Escalante does not support automatic Play application reload based
+on source file changes. When application source code changes, it's currently
+necessary to start Escalante once again (i.e. running `escalante-run` from
+SBT console). Future versions of Escalante will provide this functionality.
