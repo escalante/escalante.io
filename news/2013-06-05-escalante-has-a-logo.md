@@ -8,7 +8,7 @@ tags: [ branding ]
 
 <img src="/images/escalante_logo_600px.png"/>
 
-Yayy!! After months of waiting, Escalante finally has a log. Many thanks to
+Yayy!! After months of waiting, Escalante finally has a logo. Many thanks to
 the JBoss design team, and Cheyenne in particular, for creating such an
 awesome logo. In the next few weeks the website's design will change to adopt
 the logo and style.
