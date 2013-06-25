@@ -69,7 +69,7 @@ everyone wants can only help us in our planning.
 
 ## Developer Google Group
 
-The [Escalante developer Google Group](https://groups.google.com/forum/#!topic/escalante-dev)
+The [Escalante developer Google Group](https://groups.google.com/forum/#!forum/escalante-dev)
 is where the developers discuss internal designs, choices and complexity.
 If you are interested in the inner workings and how they are built, the
 developer list is an excellent resource.
