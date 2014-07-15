@@ -33,10 +33,10 @@ applications.
 
 Right until mid-2013, [Vert.x's Scala language extension](https://github.com/vert-x/mod-lang-scala) 
 was lagging behind other languages such as Java or Groovy. Tim was very keen 
-to get this effort moving and I started contributing to Vert.x's Scala, 
-eventually becoming the lead of this module.
+to get this effort moving and I started contributing to Vert.x's Scala module, 
+eventually becoming the lead of it.
  
-The amount of feedback received on Vert.x Scala and the community involvement
+The amount of feedback received on Vert.x Scala language extension and the community involvement
 in the project has surpassed anything Escalante had, demonstrating even more 
 where the focus is for Scala developers. They want to easily build multi-node 
 reactive applications that are scalable and fault tolerant. Managed containers, 
